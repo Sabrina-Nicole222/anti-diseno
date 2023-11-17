@@ -1,0 +1,695 @@
+
+@font-face {
+    font-family: 'Berlin';
+    src: url('./fonts/Berlin_sans/Berlin\ Sans\ FB\ Demi\ Bold.ttf') format('woff2'),
+         url('./fonts/Berlin_sans/Berlin\ Sans\ FB\ Demi\ Bold.ttf') format('woff'),
+}
+
+@font-face {
+    font-family: 'BAHNSCHRIFT';
+    src: url('./fonts/Bahnschrift/BAHNSCHRIFT.TTF\ Sans\ FB\ Demi\ Bold.ttf') format('woff2'),
+         url('./fonts/Bahnschrift/BAHNSCHRIFT.TTF\ Sans\ FB\ Demi\ Bold.ttf') format('woff'),
+}
+
+@font-face {
+    font-family: 'LibreFranklin';
+    src: url('./fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf\ Sans\ FB\ Demi\ Bold.ttf') format('woff2'),
+         url('./fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf\ Sans\ FB\ Demi\ Bold.ttf') format('woff'),
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Thin.ttf\ Sans\ FB\ Demi\ Bold.ttf') format('woff2'),
+         url('./fonts/Roboto/Roboto-Thin.ttf\ Sans\ FB\ Demi\ Bold.ttf') format('woff'),
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.cblack{
+    color: black;
+}
+
+.f10{
+    font-size: 1rem;        
+}   
+
+.f15{
+    font-size: 1.5rem;
+}
+
+.f20{
+    font-size: 2rem;
+}
+
+.f25{
+    font-size: 2.5rem;
+}
+
+.f30{
+    font-size: 3rem;
+}
+
+.f35{
+    font-size: 3.5rem;
+}
+
+.f40{
+    font-size: 4rem;
+}
+
+.f50{
+    font-size: 5rem;
+}
+
+.f55{
+    font-size: 5.5rem;
+}
+
+.f60{
+    font-size: 6rem;
+}
+
+.f70{
+    font-size: 7rem;
+}
+
+.f80{
+    font-size: 8rem;
+}
+
+
+.fregular{
+    font-weight: 300;
+} 
+
+.fmedium{
+    font-weight: 400;    
+}
+
+.fbold{
+    font-weight: bolder;
+} 
+
+.fblack{
+    font-weight: 900;
+}
+
+
+.fberlin{
+    font-family: "Berlin", sans-serif;
+}
+
+.froboto{
+    font-family: "Roboto", sans-serif;
+}
+
+.fLibreFranklin{
+    font-family: "LibreFranklin", sans-serif;
+}
+
+.Bahnschrift{
+    font-family: "BAHNSCHRIFT", sans-serif;
+}
+
+
+
+/* -------------------------------SECTION HEADER ---------------------------------- */
+
+
+
+.sectionHeader{
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 5%;
+    z-index: 100;
+}
+
+.sectionHeader .headerLogo{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionHeader .headerLogo h6{
+    color: black;
+}
+
+.sectionHeader nav{
+    height: 4rem;
+    width: 80%;
+    margin: 0 5%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+
+.sectionHeader nav input{
+    width: 90%;
+    border: none;
+    margin: 0 1rem;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+.sectionHeader nav input::placeholder {
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.sectionHeader nav input:focus {
+    outline: none;
+}
+
+.sectionHeader nav span{
+    color: white;
+    font-size: 3.5rem;
+    margin: 0 1rem;
+}
+
+
+/* -------------------------------SECTION HOME---------------------------------- */
+
+.sectionHome{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 10%;
+}
+
+.sectionHome .carousel{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sectionHome .carousel .carousel-item img{
+    height: 100vh;
+}
+
+.sectionHome .carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 1; 
+}
+
+.sectionHome .containerTittles {
+  width: 90%;
+  height: 70%; 
+  margin: 0 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+}
+
+.sectionHome .containerTittles h1{
+    color: white;
+    font-size: 10rem;
+    font-weight: 800;
+    margin: -2rem;
+}
+
+.sectionHome .containerTittles h1:nth-child(1),
+.sectionHome .containerTittles h1:nth-child(3){
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+
+.sectionHome .containerfotterhome{
+  width: 100%;
+  height: 30%; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.sectionHome .containerfotterhome h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.sectionHome .containerfotterhome .containerButtoms{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionHome .containerfotterhome .containerButtoms button{
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    border: none;
+    margin: 0% 5%;
+}
+
+.sectionHome .containerfotterhome .containerButtoms button:hover svg circle{
+    stroke: black;
+}
+.sectionHome .containerfotterhome .containerButtoms button:hover svg path{
+    fill: black;
+}
+
+.sectionHome .containerfotterhome .containerButtoms button svg{ 
+    width: 10rem;
+    height: 10rem;  
+}
+
+
+/* -------------------------------SECTION INFO ---------------------------------- */
+
+.sectionInfo{
+    width: 100%;
+    height: 70vh;
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionInfo h2{
+    font-size: 10rem;
+    max-width: 100%;
+}
+
+.sectionInfo p{
+    line-height: 1.2;
+    margin-right: 10%;
+    text-wrap: balance;
+}
+
+.info-2{
+    text-align: end;
+}
+
+.info-2 p{
+    margin-right: 0;
+    margin-left: 10%;
+    text-wrap: balance;
+}
+
+
+/* -------------------------------SECTION IMG ---------------------------------- */
+
+
+.sectionImg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.sectionImg .carousel{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sectionImg .carousel .carousel-item img{
+    height: 100vh;
+    /* width: 100%; */
+}
+
+.sectionImg .carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 1; 
+}
+
+.sectionImg .containerTittles {
+    width: 90%;
+    height: 70%; 
+    margin: 0 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+}
+
+.sectionImg .containerTittles h1{
+    text-align: end;
+    color: white;
+    font-size: 12rem;
+    font-weight: 800;
+    margin: -1rem;
+    line-height: 1.2;
+}
+
+.sectionImg .containerTittles h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.sectionImg .containerButtoms{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    z-index: 100;
+}
+
+.sectionImg .containerButtoms button{
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    border: none;
+    margin: 0% auto;
+}
+
+.sectionImg .containerButtoms button:hover svg circle{
+    stroke: black;
+}
+.sectionImg .containerButtoms button:hover svg path{
+    fill: black;
+}
+
+.sectionImg .containerButtoms button svg{ 
+    width: 10rem;
+    height: 10rem;  
+}
+
+.sectionImg .buttonFlux{
+    width: 100%;
+    justify-content: end;
+}
+
+.sectionImg .buttonFlux button{
+    margin: 0;
+    margin-right: 5%;
+}
+
+
+
+
+
+/* -------------------------------SECTION PRODUCTS---------------------------------- */
+
+.containerProducts{
+ width: 100%;
+ height: 100vh;
+ padding: 0 5%;
+ padding-top: 2rem;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+}
+
+.containerProducts h2{
+    color: transparent;
+    font-size: 7rem;
+    -webkit-text-stroke: 3px #CF232C;
+    line-height: 6rem;
+}
+
+.containerProducts h2 span{
+    font-size: 9rem;
+}
+
+.containerProducts .containerItems{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.containerProducts .containerItems .item{
+   width: 45rem;
+   height: 40rem;
+   display: flex;
+   align-items: center;
+}
+
+.containerProducts .containerItems .item .masVendido{
+   background-color: #CF232C;
+   color: white;
+   padding: 0.2rem 1rem;
+   border-radius: 25px;
+   width: 70%;
+   text-align: center;
+   box-shadow: 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containerProducts .containerItems .item img{
+    height: 20rem;
+    box-shadow: 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containerProducts .containerItems .item div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.containerProducts .containerItems .item div div{
+   width: 100%;
+}
+
+.containerProducts .containerItems .item div svg{
+   width: 90%;
+   height: 30px;
+}
+
+.containerProducts .containerItems .item div button{
+   background-color: #CF232C;
+   border: none;
+   padding: 0.5rem 2rem;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 70%;
+   border-radius: 10px;
+   box-shadow: 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containerProducts .containerItems .item div button span{
+ font-size: 2.5rem;
+}
+
+.containerProducts .envios{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    background-color: #ECECEC;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------SECTION FOOTER---------------------------------- */
+
+
+.sectionFooter{
+    width: 100%;
+    height: 70vh;
+    padding: 0% 5%;
+    padding-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.100);
+}
+
+.sectionFooter .info{
+    display: flex;
+    height: 60%;
+}
+
+.sectionFooter .institucional, .ayuda{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.sectionFooter a{
+    color: black;
+}
+
+.sectionFooter .footer{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionFooter .footer div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.sectionFooter .footer div span img{
+    margin: 0% 1rem;
+}
+
+.sectionFooter .footer div span img{
+    width: 8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 2560px) {
+    *{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1920px) {
+    *{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1366px) {
+    *{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    *{
+        font-size: 9px;
+    }
+    .sectionHome{
+        height: 60vh;
+    }
+
+    .sectionHome .carousel .carousel-item img{
+        height: 60vh;
+    }
+
+    .sectionInfo{
+        height: 40vh; 
+    }
+
+    .sectionImg{
+        height: 60vh;
+    }
+
+    .sectionImg .carousel .carousel-item img{
+        height: 60vh;
+    }
+
+    .containerProducts .containerItems .item{
+       flex-direction: column;
+     }
+}
+
+@media (max-width: 960px) {
+    *{
+        font-size: 8px;
+    }
+}   
+
+@media (max-width: 768px) {
+    *{
+        font-size: 7px;
+    }    
+}   
+
+@media (max-width: 560px) {
+    *{
+        font-size: 6px;
+    }    
+}   
+
+@media (max-width: 480px) {
+    *{
+        font-size: 5px;
+    }
+
+    .containerProducts .containerItems{
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+    }
+}
+
+@media (max-width: 380px) {
+    *{
+        font-size: 4px;
+    }
+}   
+
+@media (max-width: 280px) {
+    *{
+        font-size: 2px;
+    }
+}   
+
